@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Formulario Ecotecnias</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background-color: #00aadd; min-height: 100vh; font-family: Arial, sans-serif; }
+    .ola { position: fixed; top: 0; left: 0; width: 100%; z-index: -1; }
+    .contenido { padding: 30px; color: white; max-width: 600px; }
+    h2 { margin-bottom: 20px; font-size: 1.8rem; }
+    label { display: block; margin-top: 15px; margin-bottom: 5px; font-weight: bold; }
+    input[type="text"], select, textarea {
+      width: 100%;
+      padding: 8px 10px;
+      border-radius: 6px;
+      border: none;
+      font-size: 1rem;
+    }
+    input[type="radio"], input[type="checkbox"] { margin-right: 8px; }
+    .opcion { margin-bottom: 6px; }
+    button {
+      margin-top: 25px;
+      background-color: #3cb554;
+      color: white;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover { background-color: #2e9444; }
+    .regresar { display: inline-block; background: white; color: #00aadd; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: bold; margin-bottom: 20px; }
+    hr { border: none; border-top: 2px solid #ffffffaa; margin: 30px 0; }
+    .footer { font-size: 12px; color: #e0f7ff; }
+  </style>
+</head>
+<body>
+  <svg class="ola" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#3cb554" d="M0,0 C200,150 400,0 600,80 C800,160 1000,20 1200,100 C1350,160 1440,80 1440,80 L1440,0 Z"/>
+  </svg>
+  <div class="contenido">
+    <a class="regresar" href="index.html">← Regresar</a>
+    <h2>Formulario sobre Ecotecnias</h2>
+
+    <form>
+      <label>Nombre:</label>
+      <input type="text" placeholder="Tu nombre completo">
+
+      <label>Edad:</label>
+      <input type="text" placeholder="Tu edad">
+
+      <label>¿Conocias las ecotecnias antes de este tema?</label>
+      <div class="opcion"><label><input type="radio" name="conocia"> Si</label></div>
+      <div class="opcion"><label><input type="radio" name="conocia"> No</label></div>
+
+      <label>¿Cual ecotecnia te parece mas util?</label>
+      <select>
+        <option>Paneles solares</option>
+        <option>Captacion de agua de lluvia</option>
+        <option>Biodigestor</option>
+        <option>Huerto urbano</option>
+        <option>Bano seco</option>
+      </select>
+
+      <label>¿Usarias una ecotecnia en tu hogar?</label>
+      <div class="opcion"><label><input type="radio" name="usaria"> Si</label></div>
+      <div class="opcion"><label><input type="radio" name="usaria"> No</label></div>
+      <div class="opcion"><label><input type="radio" name="usaria"> Tal vez</label></div>
+
+      <label>¿Que tipo de ecotecnia te gustaria implementar?</label>
+      <div class="opcion"><label><input type="checkbox"> Energetica (solar, eolica)</label></div>
+      <div class="opcion"><label><input type="checkbox"> Hidrica (agua de lluvia)</label></div>
+      <div class="opcion"><label><input type="checkbox"> Alimentaria (huerto, composta)</label></div>
+      <div class="opcion"><label><input type="checkbox"> Construccion (adobe, bambu)</label></div>
+
+      <label>Comentarios:</label>
+      <textarea rows="4" placeholder="Escribe aqui tus comentarios..."></textarea>
+
+      <br>
+      <button type="button">Enviar</button>
+    </form>
+
+    <hr>
+    <div class="footer">
+      <p>Instituciones que cuidan el agua: CONAGUA - Comision Nacional del Agua</p>
+      <p>Correo: marcoamauryiglesiasmedina@gmail.com | Direccion: Escuela Preparatoria Anexa a la Normal no.1 de Toluca | Telefono: 7222505650</p>
+    </div>
+  </div>
+</body>
+</html>
